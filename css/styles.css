@@ -1,101 +1,100 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 body {
-    margin:0;
-    font-family: "Montserrat", sans-serif;
-    color: #6C7289;
-    background-color: #FFFFFF;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #6c7289;
+  background-color: #f2eae2;
 }
 
 .header {
-    width: 311px;
-    text-align: center;
-  }
-  
+  text-align: center;
+}
+
 .main {
-    width: 343px;
-    height: 611px ;
-    background-color: #FFFFFF;
-    color: #6C7289;
+  height: 611px;
+  background-color: #ffffff;
+  color: #6c7289;
 }
 
 .card {
-    width: 343px;
-    height: 611px;
-    box-shadow: 0 15px 30px -11px rgb(131 166 210/0.5);
-    padding: 24px;
-    border-radius: 0.625rem;
-    text-align: auto;
-  }
-  .description, .card-label, .card-text, .card-title{
-    width: px;
-  
+  position: relative;
+  width: 343px;
+  height: 611px;
+  border-radius: 0.625rem;
+  margin-inline: auto;
+}
+.description,
+.card-label,
+.card-text,
+.card-title {
+  width: px;
+}
 
-  }
+.card-label {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.card-title {
+  font-family: "Fraunces";
+  color: #1c232b;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
-  .card-label {
-    font-weight: 500;
-    font-size: 0.75rem;
-  }
-  .card-title {
-    font-family: "Fraunces";
-    color: #1C232B;
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-  
-  .card-text {
-    font-size: 0.875rem;
-  }
-  
-  .price {
-    font-family: "Fraunces";
-    color: #3D8168;
-    font-size: 2rem;
-    font-weight:700;
-    margin-right: 19px;
-    
-  }
-  .price::before {
-     content: attr(data-currency);
-    }
-  
-  .strikethrough-price {
-    font-family: "Fraunces";
-    color: #6C7289;
-    font-size: 0.8125rem;
-    font-weight:500;
-    text-decoration: line-through;
-    
-  }
+.card-text {
+  font-size: 0.875rem;
+}
 
-  .strikethrough-price::before {
-    content: attr(data-currency);
-  }
+.price {
+  font-family: "Fraunces";
+  color: #3d8168;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 19px;
+}
+.price::before {
+  content: attr(data-currency);
+}
 
-  .card-button {
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
-    position:absolute;
-    bottom: 24px;
-    width: 295px;
-    height: 48px;
-    background-color: #3D8168;
-    border-radius: 0.5rem;
-    padding: 0.9375rem 92px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:11.61px;
-  }
+.strikethrough-price {
+  font-family: "Fraunces";
+  color: #6c7289;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
 
+.strikethrough-price::before {
+  content: attr(data-currency);
+}
+
+.card-button {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  bottom: 24px;
+  width: 295px;
+  height: 48px;
+  background-color: #3d8168;
+  border-radius: 0.5rem;
+  padding: 0.9375rem 92px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11.61px;
+}
+
+.description {
+  padding: 24px;
+}
