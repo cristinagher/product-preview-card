@@ -3,9 +3,20 @@
 }
 
 img {
+  position: relative;
   display: block;
   max-width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .card-image {
+    object-fit:cover;
+    width: 18.75rem;
+    height: 28.125rem;
+  }
+}
+
+
 
 body {
   margin: 0;
@@ -14,62 +25,146 @@ body {
   background-color: #f2eae2;
 }
 
-.header {
-  text-align: center;
-}
-
 .main {
-  height: 611px;
-  background-color: #ffffff;
-  color: #6c7289;
+padding: 1.75rem 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 0;
+  }
+  }
+    
 .card {
-  position: relative;
   width: 343px;
+  height: 611px;
   border-radius: 0.625rem;
-  margin-inline: auto;
+  background-color: white;
 }
 
 @media screen and (min-width: 768px) {
   .card {
-    display:flex;
-    width: 600px;
-    height: 450px;
+    background-color: white;
+    border-radius: 0.625rem;
+    width: 37.5rem;
+    height: 28.125rem;
   }
-  .image {
-    width: 300px;
-  }
+}
 
+.card-image {
+  border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 768px) {
+  .card-image {
+    position:absolute;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+  }
+  
+}
+
+.card-info {
+  padding: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+  .card-info {
+    position: absolute;
+    top:0rem;
+    left: 19.75rem;
+    padding: 1.5rem;
+    width: 18.75rem;
+    height: 28.125rem;
+    background-color: white;
+  }
 }
 
 .card-label {
-  font-weight: 500;
+  margin-block: 0;
+  margin-bottom: 0.75rem;
   font-size: 0.75rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #6c7289;
+  letter-spacing: 0.3125rem;
 }
+
+@media screen and (min-width:768px) {
+  .card-label {
+    position: absolute;
+    top:32px;
+    margin-block: 0;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    font-family: "Montserrat", sans-serif;
+    color: #6c7289;
+    letter-spacing: 0.3125rem;
+  
+  }
+}
+
 .card-title {
   font-family: "Fraunces";
   color: #1c232b;
   font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width:768px) {
+  .card-title {
+    position:absolute;
+    top:47px;
+    font-size: 32px;
+    width: 236px;
+    height: 92px;
+  }
 }
 
 .card-text {
   font-size: 0.875rem;
+  line-height: 1.4375rem;
+  color: #6c7289;
+  margin-bottom: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-text {
+    position: absolute;
+    top: 197px;
+    font-family: "Montserrat", sans-serif;
+    color: #6c7289;
+    font-size: 0.875rem;
+    line-height: 1.4375rem;
+    width:14.8125rem ;
+    height: 5.75rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
 }
 
 .price {
+  position: absolute;
+  top: 487px;
+  left: 38px;
   font-family: "Fraunces";
   color: #3d8168;
   font-size: 2rem;
   font-weight: 700;
   margin-right: 19px;
+  margin-bottom: 1.25rem;
 }
 .price::before {
   content: attr(data-currency);
 }
 
 .strikethrough-price {
+  position:absolute;
+  top: 500px;
+  left: 190px;
   font-family: "Fraunces";
   color: #6c7289;
   font-size: 0.8125rem;
@@ -80,14 +175,29 @@ body {
 .strikethrough-price::before {
   content: attr(data-currency);
 }
+@media screen and (min-width:768px) {
+  .price {
+    position: absolute;
+    top: 315px;
+    left: 338px;
 
+  }
+}
+@media screen and (min-width:768px) {
+  .strikethrough-price {
+    position: absolute;
+    top: 327px;
+    left: 500px;
+  }
+}
 .card-button {
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   color: white;
   position: absolute;
-  bottom: 24px;
+  top: 549px;
+  left:38px;
   width: 295px;
   height: 48px;
   background-color: #3d8168;
@@ -100,6 +210,22 @@ body {
   gap: 11.61px;
 }
 
-.description {
-  padding: 24px;
+@media screen and (min-width:768px) {
+  .card-button {
+    margin-top: 1.25rem;
+    position: absolute;
+    top: 350px;
+    left: 338px;
+    width: 236px;
+    height: 48px;
+    text-align: center;
+    padding: 0;
+  } 
+  
+}
+
+@media (hover:hover){
+  .button:hover {
+    background-color:#1A4032 ;
+  }
 }

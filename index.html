@@ -13,38 +13,26 @@
     <title>Product</title>
 </head>
 <body>
-    <article class="card">
-        
         <main class="main">
-            <div class="image">
+            <article class="card"> 
                 <picture>
-                <source media="min-width: 768px" srcset="./assets/image-product-desktop.jpg">
-                <source media="min-width: 360px" srcset="./assets/images/image-product-mobile.jpg">
-                <img src="./assets/images/image-product-mobile.jpg" alt="image-product">
-            </picture></div>
+                    <source media="min-width: 768px" srcset="./assets/image-product-desktop.jpg">
+                    <source media="min-width: 360px" srcset="./assets/images/image-product-mobile.jpg">
+                    <img class="card-image" src="./assets/images/image-product-mobile.jpg" alt="image-product">
+                </picture>
 
-            <article class="description">
-                <h2 class="card-label">PERFUME</h2>
-                <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>
-                <p class="card-text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="card-info">
+                    <h2 class="card-label">PERFUME</h2>
+                    <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>
+                    <p class="card-text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                </div>
                 <div class="prices ">
                     <span class= "price" data-currency= "$">149.99</span>
                     <span class= "strikethrough-price" data-currency= "$">169.99</span>
                 </div>
-                <a href="#" class="card-button"> <img src="./assets/images/icon-cart.svg" alt="cart-icon">Add to Cart</a> 
-    
+                <a href="#" class="card-button"> <img src="./assets/images/icon-cart.svg" alt="cart-icon"> <span class="button-text">Add to Cart</span></a> 
+                </div>
             </article>
         </main>
-
-    
-</article>
-
-
- 
- 
-    
-
-
-    
 </body>
 </html>
